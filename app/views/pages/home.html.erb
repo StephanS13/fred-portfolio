@@ -1,3 +1,17 @@
-<div class="photos d-flex justify-content-evenly">
-  <img class="photo" src="photo-1599751496647-0f5b84a65464.jpg" alt="">
+<%# <div class="photos d-flex justify-content-evenly">
+  <img class="photo" src="photo1.jpg" alt="">
+</div> %>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag 'photo1.jpg', class:"photo" %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'photo2.jpg', class:"photo"  %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'photo3.jpg', class:"photo"  %>
+    </div>
+  </div>
 </div>

@@ -4,7 +4,6 @@
   font-weight: 400;
   font-family: Work Sans;
 }
-
 .title {
   margin-top: 10px;
   font-size: 16px;
@@ -12,12 +11,17 @@
   font-weight: 300;
   // color: gray
 }
-
 .navbar {
   // margin-top: -7px;
   font-family: Work Sans;
   font-size: 20px;
   font-weight: 300;
+}
+.carousel-inner {
+  
+  display: flex !important;
+  justify-content: space-around !important;
+  margin-left: -4.5%;
 }
 .photo {
   margin-top: 20px;
