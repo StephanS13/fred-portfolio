@@ -17,11 +17,20 @@
   font-size: 20px;
   font-weight: 300;
 }
-.carousel-inner {
-  
-  display: flex !important;
-  justify-content: space-around !important;
-  margin-left: -4.5%;
+
+// CAROUSEL
+$size-width: 550px;
+$size-height: 250px;
+.carousel-container {
+  width: $size-width;
+  height: $size-height;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.carousel {
+  display: flex;
+  width: $size-width * 3;
+  animation: sliding 12s infinite;
 }
 .photo {
   margin-top: 20px;
@@ -30,6 +39,27 @@
   object-fit: cover;
   object-position: top;
 }
+@keyframes sliding {
+  30% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(-$size-width);
+  }
+  65% {
+    transform: translateX(-$size-width);
+  }
+  70% {
+    transform: translateX(-$size-width * 2);
+  }
+  98% {
+    transform: translateX(-$size-width * 2);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .credits {
   margin-top: 50px;
   font-size: 10px;
